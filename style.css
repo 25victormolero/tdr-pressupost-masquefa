@@ -364,3 +364,20 @@ padding:15px;
 }
 
 }
+/* ==========================
+TAMAÑO DE LOS GRÁFICOS
+========================== */
+
+canvas{
+
+    width:100% !important;
+
+    max-width:900px;
+
+    height:420px !important;
+
+    margin:40px auto;
+
+    display:block;
+
+}
