@@ -115,6 +115,9 @@ section + section{ border-top:1px solid var(--line-soft); }
   .nav-toggle{ display:flex; }
   body:has(.nav-links.open){ overflow:hidden; }
 }
+@media (max-width:860px){
+  .topnav{ backdrop-filter:none; background:#12161B; }
+}
 
 /* ---------- Hero ---------- */
 .hero{ padding:5rem 0 4rem; overflow:hidden; }
