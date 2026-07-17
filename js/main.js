@@ -33,9 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     rose: CSS_VAR('--rose'), ink: CSS_VAR('--ink'), inkMuted: CSS_VAR('--ink-muted'),
     inkFaint: CSS_VAR('--ink-faint'), line: CSS_VAR('--line-soft')
   };
-  const eur = (v) => new Intl.NumberFormat('ca-ES', { maximumFractionDigits: 0 }).format(v) + ' €';
-  const eurShort = (v) => {
-    if (Math.abs(v) >= 1000000) return (v/1000000).toFixed(2).replace('.0','') + ' M€';
+const eurShort = (v) => {
+    if (Math.abs(v) >= 1000000) {
+      let s = (v/1000000).toFixed(2).replace(/0+$/,'').replace(/\.$/,'');
+      return s + ' M€';
+    }
     if (Math.abs(v) >= 1000) return (v/1000).toFixed(0) + ' k€';
     return v + ' €';
   };
