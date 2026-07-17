@@ -142,7 +142,8 @@ function crearGraficsBase(){
 
                 responsive:true,
 
-                maintainAspectRatio:false,
+                maintainAspectRatio:true,
+aspectRatio:2.2,
 
                 plugins:{
 
@@ -237,7 +238,8 @@ options:{
 
 responsive:true,
 
-maintainAspectRatio:false,
+maintainAspectRatio:true,
+aspectRatio:2.2,
 
 plugins:{
 
@@ -315,7 +317,8 @@ options:{
 
 responsive:true,
 
-maintainAspectRatio:false,
+maintainAspectRatio:true,
+aspectRatio:2.2,
 
 plugins:{
 
@@ -396,7 +399,8 @@ options:{
 
 responsive:true,
 
-maintainAspectRatio:false,
+maintainAspectRatio:true,
+aspectRatio:2.2,
 
 plugins:{
 
