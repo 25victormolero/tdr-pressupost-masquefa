@@ -43,8 +43,13 @@ html{ scroll-behavior:smooth; }
   *,*::before,*::after{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
 }
 
+html{
+  overflow-x:hidden;
+}
+
 body{
   margin:0;
+  overflow-x:hidden;
   background:
     radial-gradient(1100px 600px at 85% -10%, rgba(212,175,55,0.07), transparent 60%),
     radial-gradient(900px 500px at -10% 20%, rgba(79,169,140,0.06), transparent 55%),
