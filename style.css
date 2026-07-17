@@ -215,15 +215,23 @@ GRAFICOS
 
 canvas{
 
-    margin-top:40px;
+    display:block;
 
-    background:white;
+    width:100% !important;
 
-    border-radius:20px;
+    max-width:900px;
 
-    padding:30px;
+    height:350px !important;
 
-    box-shadow:0 10px 35px rgba(0,0,0,.09);
+    margin:30px auto;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 
 }
 
