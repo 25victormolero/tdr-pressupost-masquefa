@@ -109,10 +109,11 @@ section + section{ border-top:1px solid var(--line-soft); }
 .nav-toggle{ display:none; background:none; border:1px solid var(--line); color:var(--ink); border-radius:8px; width:40px; height:36px; align-items:center; justify-content:center; }
 
 @media (max-width:860px){
-  .nav-links{ position:fixed; inset:64px 0 0 0; background:var(--bg); flex-direction:column; padding:2rem var(--pad); gap:1.4rem; font-size:1.15rem;
+  .nav-links{ position:fixed; inset:64px 0 0 0; z-index:100; background:#12161B; flex-direction:column; padding:2rem var(--pad); gap:1.4rem; font-size:1.15rem;
     transform:translateY(-8px); opacity:0; pointer-events:none; transition:opacity .18s ease, transform .18s ease; }
   .nav-links.open{ opacity:1; transform:translateY(0); pointer-events:auto; }
   .nav-toggle{ display:flex; }
+  body:has(.nav-links.open){ overflow:hidden; }
 }
 
 /* ---------- Hero ---------- */
