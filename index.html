@@ -2,23 +2,21 @@
 <html lang="ca">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Percepció ciutadana vs realitat pressupostària | Masquefa</title>
+    <title>Anàlisi d'un pressupost públic | Masquefa</title>
 
     <meta name="description"
-        content="Anàlisi de la percepció ciutadana sobre l'ús del pressupost públic de Masquefa comparada amb les dades oficials.">
-
-    <link rel="stylesheet" href="style.css">
+        content="Anàlisi del pressupost públic de Masquefa i comparació amb la percepció ciutadana.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -26,70 +24,85 @@
 
 <body>
 
-<header>
+<header class="header">
 
-<nav class="navbar">
+    <div class="container">
 
-<div class="logo">
+        <div class="logo">
 
-MASQUEFA
+            <h2>MASQUEFA</h2>
 
-</div>
+        </div>
 
-<ul>
+        <nav>
 
-<li><a href="#introduccio">Introducció</a></li>
+            <ul>
 
-<li><a href="#pressupost">Pressupost</a></li>
+                <li><a href="#introduccio">Introducció</a></li>
 
-<li><a href="#enquesta">Enquesta</a></li>
+                <li><a href="#pressupost">Pressupost</a></li>
 
-<li><a href="#comparacio">Comparació</a></li>
+                <li><a href="#educacio">Educació</a></li>
 
-<li><a href="#conclusions">Conclusions</a></li>
+                <li><a href="#sanitat">Sanitat</a></li>
 
-</ul>
+                <li><a href="#seguretat">Seguretat</a></li>
 
-</nav>
+                <li><a href="#enquesta">Enquesta</a></li>
+
+                <li><a href="#comparacio">Comparació</a></li>
+
+                <li><a href="#conclusions">Conclusions</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
 
 </header>
 
 <section class="hero">
 
-<div class="overlay"></div>
+    <div class="hero-content">
 
-<div class="hero-content">
+        <span class="badge">
 
-<h1>
+            Treball de Recerca · 2026
 
-Percepció ciutadana
+        </span>
 
-<br>
+        <h1>
 
-vs
+            Anàlisi d'un pressupost públic
 
-<br>
+        </h1>
 
-Realitat pressupostària
+        <h2>
 
-</h1>
+            En què es gasten els diners i com es financen les administracions?
 
-<p>
+        </h2>
 
-Anàlisi del pressupost públic de Masquefa a partir de les dades oficials
-i dels resultats d'una enquesta ciutadana.
+        <p>
 
-</p>
+            Aquest projecte analitza els pressupostos municipals de Masquefa dels
+            anys 2024, 2025 i 2026 i els compara amb la percepció de la ciutadania
+            obtinguda mitjançant una enquesta.
 
-<a href="#introduccio" class="button">
+        </p>
 
-Començar
+        <a href="#introduccio" class="btn">
 
-</a>
+            Començar l'anàlisi
 
-</div>
+        </a>
+
+    </div>
 
 </section>
+
+<main>
 
 <section id="introduccio" class="section">
 
@@ -97,10 +110,15 @@ Començar
 
 <h2>Introducció</h2>
 
-<p class="placeholder">
+<p>
 
-Aquest apartat serà redactat un cop finalitzi l'anàlisi completa del
-Treball de Recerca i dels resultats de l'enquesta.
+Els pressupostos públics constitueixen una de les eines més importants de qualsevol administració pública. A través d'ells es decideix com es distribueixen els recursos econòmics disponibles, quines actuacions es prioritzaran i quins serveis es podran oferir a la ciutadania.
+
+</p>
+
+<p>
+
+Aquest treball analitza els pressupostos municipals de Masquefa corresponents als exercicis 2024, 2025 i 2026. Paral·lelament, es presenten els resultats d'una enquesta ciutadana per estudiar fins a quin punt la percepció de la població coincideix amb la realitat pressupostària.
 
 </p>
 
@@ -114,7 +132,67 @@ Treball de Recerca i dels resultats de l'enquesta.
 
 <h2>El pressupost municipal</h2>
 
-<canvas id="pressupostChart"></canvas>
+<p>
+
+En aquest apartat s'analitzaran els ingressos, les despeses i l'evolució dels pressupostos municipals dels darrers tres exercicis.
+
+</p>
+
+<canvas id="evolucioPressupost"></canvas>
+
+</div>
+
+</section>
+
+<section id="educacio" class="section">
+
+<div class="container">
+
+<h2>Educació</h2>
+
+<p>
+
+S'analitzarà la inversió municipal destinada a l'àmbit educatiu, diferenciant entre manteniment dels centres, subvencions, inversions i projectes educatius.
+
+</p>
+
+<canvas id="educacioChart"></canvas>
+
+</div>
+
+</section>
+
+<section id="sanitat" class="section">
+
+<div class="container">
+
+<h2>Sanitat i benestar social</h2>
+
+<p>
+
+Aquest apartat estudiarà la inversió municipal relacionada amb la salut pública, els serveis socials i el nou Centre de Dia.
+
+</p>
+
+<canvas id="sanitatChart"></canvas>
+
+</div>
+
+</section>
+
+<section id="seguretat" class="section">
+
+<div class="container">
+
+<h2>Seguretat</h2>
+
+<p>
+
+S'analitzarà la despesa en personal policial, equipaments, inversions tecnològiques i protecció civil.
+
+</p>
+
+<canvas id="seguretatChart"></canvas>
 
 </div>
 
@@ -125,6 +203,12 @@ Treball de Recerca i dels resultats de l'enquesta.
 <div class="container">
 
 <h2>Resultats de l'enquesta</h2>
+
+<p>
+
+Es presentaran els resultats de la consulta ciutadana, identificant les prioritats, el nivell de coneixement del pressupost i la percepció sobre la gestió municipal.
+
+</p>
 
 <canvas id="enquestaChart"></canvas>
 
@@ -138,6 +222,12 @@ Treball de Recerca i dels resultats de l'enquesta.
 
 <h2>Percepció vs realitat</h2>
 
+<p>
+
+Aquest serà el nucli principal del projecte. Es compararan les opinions dels participants amb les dades oficials dels pressupostos municipals per identificar coincidències i diferències.
+
+</p>
+
 <canvas id="comparacioChart"></canvas>
 
 </div>
@@ -150,10 +240,9 @@ Treball de Recerca i dels resultats de l'enquesta.
 
 <h2>Conclusions</h2>
 
-<p class="placeholder">
+<p>
 
-Les conclusions definitives s'afegiran després de completar
-l'anàlisi estadística.
+Les conclusions finals sintetitzaran les principals diferències entre la percepció ciutadana i la realitat pressupostària, així com les reflexions obtingudes durant l'anàlisi.
 
 </p>
 
@@ -161,13 +250,19 @@ l'anàlisi estadística.
 
 </section>
 
+</main>
+
 <footer>
+
+<div class="container">
 
 <p>
 
 Treball de Recerca · Víctor Molero Alonso
 
 </p>
+
+</div>
 
 </footer>
 
