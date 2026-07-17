@@ -381,3 +381,14 @@ canvas{
     display:block;
 
 }
+.chart-container{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:420px;
+
+    margin:auto;
+
+}
