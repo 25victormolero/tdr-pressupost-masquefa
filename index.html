@@ -1,273 +1,315 @@
 <!DOCTYPE html>
 <html lang="ca">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Anàlisi d'un pressupost públic | Masquefa</title>
-
-    <meta name="description"
-        content="Anàlisi del pressupost públic de Masquefa i comparació amb la percepció ciutadana.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anàlisi d'un pressupost públic · Masquefa</title>
+<meta name="description" content="Treball de Recerca: anàlisi del pressupost municipal de Masquefa (2024-2026) confrontat amb la percepció ciutadana recollida en una enquesta pròpia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-<header class="header">
+<a class="visually-hidden" href="#main">Anar al contingut</a>
 
-    <div class="container">
-
-        <div class="logo">
-
-            <h2>MASQUEFA</h2>
-
-        </div>
-
-        <nav>
-
-            <ul>
-
-                <li><a href="#introduccio">Introducció</a></li>
-
-                <li><a href="#pressupost">Pressupost</a></li>
-
-                <li><a href="#educacio">Educació</a></li>
-
-                <li><a href="#sanitat">Sanitat</a></li>
-
-                <li><a href="#seguretat">Seguretat</a></li>
-
-                <li><a href="#enquesta">Enquesta</a></li>
-
-                <li><a href="#comparacio">Comparació</a></li>
-
-                <li><a href="#conclusions">Conclusions</a></li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
+<header class="topnav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg class="stamp-mini" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" stroke="#D4AF37" stroke-width="1.6"/>
+        <circle cx="20" cy="20" r="12.5" stroke="#D4AF37" stroke-width="1" stroke-dasharray="2 3"/>
+        <path d="M20 12v16M14 20h12" stroke="#D4AF37" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      Pressupost <span class="place">Masquefa</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#projecte">El projecte</a></li>
+        <li><a href="#pressupost">Pressupost</a></li>
+        <li><a href="#arees">Àrees clau</a></li>
+        <li><a href="#enquesta">Enquesta</a></li>
+        <li><a href="#comparativa">Comparativa</a></li>
+        <li><a href="#metodologia">Metodologia</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
 </header>
 
-<section class="hero">
+<main id="main">
 
-    <div class="hero-content">
-
-        <span class="badge">
-
-            Treball de Recerca · 2026
-
-        </span>
-
-        <h1>
-
-            Anàlisi d'un pressupost públic
-
-        </h1>
-
-        <h2>
-
-            En què es gasten els diners i com es financen les administracions?
-
-        </h2>
-
-        <p>
-
-            Aquest projecte analitza els pressupostos municipals de Masquefa dels
-            anys 2024, 2025 i 2026 i els compara amb la percepció de la ciutadania
-            obtinguda mitjançant una enquesta.
-
-        </p>
-
-        <a href="#introduccio" class="btn">
-
-            Començar l'anàlisi
-
-        </a>
-
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Treball de Recerca · Institut de Masquefa · 2025–2027</p>
+        <h1>El pressupost diu una cosa. <em>La ciutadania en percep una altra.</em></h1>
+        <p class="lede">Una anàlisi del pressupost municipal de Masquefa (2024–2026), euro a euro, confrontada amb la percepció real de 141 veïns i veïnes recollida a través d'una enquesta pròpia.</p>
+        <div class="hero-stats">
+          <div class="stat"><b>17,34 M€</b><span>Pressupost 2026</span></div>
+          <div class="stat"><b>141</b><span>Respostes a l'enquesta</span></div>
+          <div class="stat"><b>3</b><span>Exercicis analitzats (2024–26)</span></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#pressupost">Veure el pressupost</a>
+          <a class="btn btn-ghost" href="#comparativa">Percepció vs realitat</a>
+        </div>
+      </div>
+      <div class="stamps" aria-hidden="true">
+        <div class="stamp stamp-real"><span class="k">Dades oficials</span><span class="v">Pressupost real</span></div>
+        <div class="stamp stamp-perc"><span class="k">Enquesta n=141</span><span class="v">Percepció ciutadana</span></div>
+      </div>
     </div>
-
-</section>
-
-<main>
-
-<section id="introduccio" class="section">
-
-<div class="container">
-
-<h2>Introducció</h2>
-
-<p>
-
-Els pressupostos públics constitueixen una de les eines més importants de qualsevol administració pública. A través d'ells es decideix com es distribueixen els recursos econòmics disponibles, quines actuacions es prioritzaran i quins serveis es podran oferir a la ciutadania.
-
-</p>
-
-<p>
-
-Aquest treball analitza els pressupostos municipals de Masquefa corresponents als exercicis 2024, 2025 i 2026. Paral·lelament, es presenten els resultats d'una enquesta ciutadana per estudiar fins a quin punt la percepció de la població coincideix amb la realitat pressupostària.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="pressupost" class="section">
-
-<div class="container">
-
-<h2>El pressupost municipal</h2>
-
-<p>
-
-En aquest apartat s'analitzaran els ingressos, les despeses i l'evolució dels pressupostos municipals dels darrers tres exercicis.
-
-</p>
-
-<canvas id="evolucioPressupost"></canvas>
-
-</div>
-
-</section>
-
-<section id="educacio" class="section">
-
-<div class="container">
-
-<h2>Educació</h2>
-
-<p>
-
-S'analitzarà la inversió municipal destinada a l'àmbit educatiu, diferenciant entre manteniment dels centres, subvencions, inversions i projectes educatius.
-
-</p>
-
-<canvas id="educacioChart"></canvas>
-
-</div>
-
-</section>
-
-<section id="sanitat" class="section">
-
-<div class="container">
-
-<h2>Sanitat i benestar social</h2>
-
-<p>
-
-Aquest apartat estudiarà la inversió municipal relacionada amb la salut pública, els serveis socials i el nou Centre de Dia.
-
-</p>
-
-<canvas id="sanitatChart"></canvas>
-
-</div>
-
-</section>
-
-<section id="seguretat" class="section">
-
-<div class="container">
-
-<h2>Seguretat</h2>
-
-<p>
-
-S'analitzarà la despesa en personal policial, equipaments, inversions tecnològiques i protecció civil.
-
-</p>
-
-<canvas id="seguretatChart"></canvas>
-
-</div>
-
-</section>
-
-<section id="enquesta" class="section">
-
-<div class="container">
-
-<h2>Resultats de l'enquesta</h2>
-
-<p>
-
-Es presentaran els resultats de la consulta ciutadana, identificant les prioritats, el nivell de coneixement del pressupost i la percepció sobre la gestió municipal.
-
-</p>
-
-<canvas id="enquestaChart"></canvas>
-
-</div>
-
-</section>
-
-<section id="comparacio" class="section">
-
-<div class="container">
-
-<h2>Percepció vs realitat</h2>
-
-<p>
-
-Aquest serà el nucli principal del projecte. Es compararan les opinions dels participants amb les dades oficials dels pressupostos municipals per identificar coincidències i diferències.
-
-</p>
-
-<canvas id="comparacioChart"></canvas>
-
-</div>
-
-</section>
-
-<section id="conclusions" class="section">
-
-<div class="container">
-
-<h2>Conclusions</h2>
-
-<p>
-
-Les conclusions finals sintetitzaran les principals diferències entre la percepció ciutadana i la realitat pressupostària, així com les reflexions obtingudes durant l'anàlisi.
-
-</p>
-
-</div>
-
-</section>
+  </section>
+
+  <!-- ============ EL PROJECTE ============ -->
+  <section id="projecte">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 · El projecte</p>
+        <h2>Per què val la pena mirar un pressupost municipal</h2>
+        <p>Darrere de cada xifra hi ha una decisió política. Aquest treball parteix de la hipòtesi que hi ha una diferència significativa entre les prioritats que percep la població i les decisions reals que es reflecteixen en els pressupostos de l'Ajuntament de Masquefa.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <h3>Municipi</h3>
+          <div class="num">10.330 hab.</div>
+          <p>Masquefa (Anoia, Barcelona) creix entre 200 i 225 persones cada any. La taxa d'atur se situa al 8,2%, amb tendència a la baixa.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Part teòrica</h3>
+          <div class="num">9 capítols</div>
+          <p>Marc jurídic del pressupost municipal: com s'organitza, quin cicle segueix i com es classifiquen ingressos i despeses.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Part pràctica</h3>
+          <div class="num">2 fonts</div>
+          <p>Dades pressupostàries oficials 2024–2026 cedides per l'Ajuntament, contrastades amb una enquesta d'opinió pròpia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRESSUPOST ============ -->
+  <section id="pressupost">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 · Pressupost municipal</p>
+        <h2>D'on vénen els diners i on van</h2>
+        <p>El pressupost ha passat de 16,75 M€ el 2024 a 17,34 M€ el 2026 (+3,5%), mantenint l'endeutament municipal molt per sota del límit legal del 75% — del 62% el 2024 al 43% el 2026.</p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:1.4rem;">
+        <div class="chart-card reveal">
+          <h3>Ingressos per capítol</h3>
+          <p class="sub">Classificació econòmica · euros (€)</p>
+          <div class="tabs" data-year-tabs="income">
+            <button class="tab" data-year="2024">2024</button>
+            <button class="tab" data-year="2025">2025</button>
+            <button class="tab active" data-year="2026">2026</button>
+          </div>
+          <div class="chart-box"><canvas id="chart-income"></canvas></div>
+        </div>
+        <div class="chart-card reveal">
+          <h3>Despeses per capítol</h3>
+          <p class="sub">Classificació econòmica · euros (€)</p>
+          <div class="tabs" data-year-tabs="expense">
+            <button class="tab" data-year="2024">2024</button>
+            <button class="tab" data-year="2025">2025</button>
+            <button class="tab active" data-year="2026">2026</button>
+          </div>
+          <div class="chart-box"><canvas id="chart-expense"></canvas></div>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="chart-card reveal">
+          <h3>Evolució del pressupost total</h3>
+          <p class="sub">Ingressos vs. despeses, 2024–2026</p>
+          <div class="chart-box"><canvas id="chart-totals"></canvas></div>
+        </div>
+        <div class="chart-card reveal">
+          <h3>Distribució de la despesa</h3>
+          <p class="sub">Percentatge per capítol</p>
+          <div class="tabs" data-year-tabs="share">
+            <button class="tab" data-year="2024">2024</button>
+            <button class="tab" data-year="2025">2025</button>
+            <button class="tab active" data-year="2026">2026</button>
+          </div>
+          <div class="chart-box"><canvas id="chart-share"></canvas></div>
+        </div>
+      </div>
+
+      <div class="callout reveal" style="margin-top:1.6rem;">
+        La partida de <strong>béns corrents i serveis</strong> (neteja, subministraments, contractes externs) és, i ha estat sempre, la més voluminosa: del 39,7% de la despesa el 2024 al 42,8% el 2026. Les <strong>inversions reals</strong> han baixat en pes relatiu (del 21,6% al 17,1%) tot i créixer en volum gràcies a subvencions d'altres administracions.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÀREES CLAU ============ -->
+  <section id="arees">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 · Àrees estratègiques</p>
+        <h2>Educació, sanitat i seguretat, any per any</h2>
+        <p>Encara que educació i sanitat són competència de la Generalitat, l'Ajuntament hi participa de manera complementària. Aquestes tres àrees concentren bona part del debat ciutadà.</p>
+      </div>
+
+      <div class="chart-card reveal" style="margin-bottom:1.6rem;">
+        <h3>Inversió en capital social per àrea</h3>
+        <p class="sub">Comparativa 2024 vs. 2026 · euros (€)</p>
+        <div class="chart-box"><canvas id="chart-areas"></canvas></div>
+      </div>
+
+      <div class="grid grid-3" id="areas-grid"><!-- generat per JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ ENQUESTA ============ -->
+  <section id="enquesta">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 · Veu ciutadana</p>
+        <h2>Què en pensen els veïns i veïnes de Masquefa</h2>
+        <p>Enquesta pròpia difosa a través de xarxes socials, l'Ajuntament, l'Institut i el Casal de Joves i d'Avis · <strong>141 respostes vàlides</strong>.</p>
+      </div>
+
+      <div class="chart-card reveal" style="margin-bottom:1.6rem;">
+        <h3>Percepció actual vs. desig d'inversió</h3>
+        <p class="sub">"On creus que s'inverteix més avui?" vs. "On caldria invertir més?" (fins a 3 opcions per persona)</p>
+        <div class="chart-box tall"><canvas id="chart-perception"></canvas></div>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:1.4rem;">
+        <div class="chart-card reveal">
+          <h3>Relació impostos / qualitat del servei</h3>
+          <p class="sub">Com valoren el que paguen respecte al que reben</p>
+          <div class="pill-list">
+            <div class="pill-row"><div class="label-row"><span>Dolenta: pago molt per poca qualitat</span><span class="n">63</span></div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--rose)"></div></div></div>
+            <div class="pill-row"><div class="label-row"><span>Equilibrada: correspon al que pago</span><span class="n">38</span></div><div class="bar-track"><div class="bar-fill" style="width:60%;background:var(--ink-faint)"></div></div></div>
+            <div class="pill-row"><div class="label-row"><span>Molt dolenta: impostos alts, servei deficient</span><span class="n">36</span></div><div class="bar-track"><div class="bar-fill" style="width:57%;background:var(--rose)"></div></div></div>
+            <div class="pill-row"><div class="label-row"><span>Bona / molt bona</span><span class="n">2</span></div><div class="bar-track"><div class="bar-fill" style="width:3%;background:var(--teal)"></div></div></div>
+          </div>
+          <p style="margin-top:1rem; font-size:.85rem; color:var(--ink-faint);"><strong style="color:var(--rose)">70%</strong> de les respostes valoren la relació impostos/serveis com a dolenta o molt dolenta.</p>
+        </div>
+        <div class="chart-card reveal">
+          <h3>Nota de transparència</h3>
+          <p class="sub">Del 0 al 5 · mitjana: <strong class="mono" style="color:var(--gold)">2,58 / 5</strong></p>
+          <div class="chart-box"><canvas id="chart-transparency"></canvas></div>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="chart-card reveal">
+          <h3>Canal d'informació habitual</h3>
+          <div class="pill-list" id="list-channel"></div>
+        </div>
+        <div class="chart-card reveal">
+          <h3>Àrea "menys perjudicial" de retallar</h3>
+          <p class="sub">Si l'Ajuntament hagués de reduir despesa</p>
+          <div class="pill-list" id="list-cut"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:1.4rem;">
+        <div class="chart-card reveal">
+          <h3>Projectes que demanen finançament urgent</h3>
+          <p class="sub">Temes agrupats a partir de les respostes obertes</p>
+          <div class="pill-list" id="list-urgent"></div>
+        </div>
+        <div class="chart-card reveal">
+          <h3>On creuen que "sobra" pressupost</h3>
+          <p class="sub">Temes agrupats a partir de les respostes obertes</p>
+          <div class="pill-list" id="list-overfunded"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPARATIVA ============ -->
+  <section id="comparativa">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 · Percepció vs. realitat</p>
+        <h2>On coincideixen — i on no</h2>
+        <p>Les tres úniques àrees on disposem alhora de xifra real de creixement pressupostari i de dada de percepció ciutadana, cara a cara.</p>
+      </div>
+
+      <div class="compare-card reveal">
+        <div id="compare-grid" class="compare-grid"><!-- generat per JS --></div>
+        <p class="gap-note">
+          <strong>Salut Pública</strong> és l'àrea que més gent voldria veure reforçada (63,8%) i la que menys gent creu que ja rep diners (7,1%) — i és també la que més ha crescut en xifres reals (+138,8%, arran del nou Centre de Dia). El repte no sembla ser de prioritats, sinó de <strong>comunicació</strong>: amb una nota mitjana de transparència de 2,58/5, bona part d'aquest esforç inversor passa desapercebut. En canvi, a <strong>Seguretat</strong> la inversió es manté pràcticament plana (−1%) tot i que gairebé la meitat de la població en voldria més — aquí sí que hi ha una diferència real entre demanda i resposta pressupostària.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METODOLOGIA ============ -->
+  <section id="metodologia">
+    <div class="wrap">
+      <div class="two-col">
+        <div class="reveal">
+          <p class="eyebrow">06 · Metodologia</p>
+          <h2>Com s'ha construït aquest treball</h2>
+          <p style="color:var(--ink-muted); margin-top:1rem;">Metodologia mixta: recerca teòrica sobre el marc legal del pressupost públic, anàlisi quantitativa de les dades oficials cedides per l'Ajuntament de Masquefa i una enquesta sociològica pròpia per copsar la percepció ciutadana, sense oferir informació prèvia sobre el pressupost real per no condicionar les respostes.</p>
+        </div>
+        <div class="reveal">
+          <div class="timeline">
+            <div class="tl-item">
+              <h4>Marc teòric</h4>
+              <p>Definició del pressupost públic, classificacions (orgànica, per programes, econòmica), cicle pressupostari i mecanismes de control i transparència.</p>
+            </div>
+            <div class="tl-item">
+              <h4>Recollida de dades pressupostàries</h4>
+              <p>Accés als pressupostos 2024, 2025 i 2026 de l'Ajuntament de Masquefa i a dades desagregades d'educació, sanitat i seguretat.</p>
+            </div>
+            <div class="tl-item">
+              <h4>Disseny i difusió de l'enquesta</h4>
+              <p>Enquesta anònima difosa per xarxes socials, l'Ajuntament, l'Institut Font del Roure, el Casal de Joves i el Casal d'Avis. 141 respostes vàlides.</p>
+            </div>
+            <div class="tl-item">
+              <h4>Anàlisi i comparativa</h4>
+              <p>Encreuament de les dades reals amb la percepció recollida per contrastar la hipòtesi inicial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <footer>
-
-<div class="container">
-
-<p>
-
-Treball de Recerca · Víctor Molero Alonso
-
-</p>
-
-</div>
-
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top" style="margin-bottom:.8rem; display:inline-flex;">Pressupost <span class="place">Masquefa</span></a>
+      <p style="max-width:32ch;">Treball de Recerca — "Anàlisi d'un pressupost públic: en què es gasten els diners i com es financen les administracions?"<br>Víctor Molero Alonso · tutora Yrina Aparicio Torres · Institut de Masquefa, 2025–2027.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <h5>Font</h5>
+        <ul>
+          <li>Ajuntament de Masquefa</li>
+          <li>Enquesta pròpia (n=141)</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Projecte</h5>
+        <ul>
+          <li><a href="https://github.com/25victormolero/tdr-pressupost-masquefa" target="_blank" rel="noopener">Codi a GitHub</a></li>
+          <li><a href="#projecte">El projecte</a></li>
+          <li><a href="#metodologia">Metodologia</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:2rem; font-size:.78rem;">© <span id="current-year"></span> Víctor Molero Alonso. Dades del pressupost públic de l'Ajuntament de Masquefa.</div>
 </footer>
 
-<script src="script.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="data/data.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
