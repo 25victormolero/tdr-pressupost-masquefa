@@ -7,6 +7,10 @@
 <meta name="description" content="Treball de Recerca: anàlisi del pressupost municipal de Masquefa (2024-2026) confrontat amb la percepció ciutadana recollida en una enquesta pròpia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#12161B">
 </head>
 <body>
 
@@ -311,5 +315,10 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script src="data/data.js"></script>
 <script src="js/main.js?v=2"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(console.error);
+  }
+</script>
 </body>
 </html>
