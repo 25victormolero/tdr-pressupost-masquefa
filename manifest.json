@@ -1,0 +1,38 @@
+{
+  "name": "Pressupost Vs Percepció",
+  "short_name": "Pressupost Vs Percepció",
+  "description": "Anàlisi del pressupost públic de Masquefa (2024–2026) confrontat amb la percepció ciutadana recollida en una enquesta pròpia.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#12161B",
+  "theme_color": "#12161B",
+  "lang": "ca",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
